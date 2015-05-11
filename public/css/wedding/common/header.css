@@ -1,0 +1,164 @@
+.site-header .site-header-in {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0;
+  zoom: 1;
+  font-size: 14px;
+}
+.site-header .site-header-in:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.site-header .site-header-in > span {
+  float: left;
+  font-size: 14px;
+  color: #848484;
+}
+.site-header .site-header-in .login {
+  float: right;
+  color: #a99189;
+  vertical-align: middle;
+}
+.site-header .site-header-in .login a {
+  display: inline-block;
+  color: #a99189;
+}
+.site-header .site-header-in .login .line {
+  font-size: 16px;
+  margin: 0 4px;
+}
+.site-header .site-header-in .login .btn:hover {
+  color: #4D3A33;
+}
+.site-header .hr {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+.site-header .search-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px 0 20px 0;
+  zoom: 1;
+}
+.site-header .search-container:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.site-header .search-container .logo {
+  cursor: pointer;
+  float: left;
+}
+.site-header .search-container .search-box {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+.site-header .search-container .search-bar {
+  float: right;
+  zoom: 1;
+}
+.site-header .search-container .search-bar:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.site-header .search-container .search-bar input {
+  display: block;
+  float: left;
+  color: #4d4d4d;
+}
+.site-header .search-container .search-bar input:nth-child(1) {
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  border-top-left-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-bottomleft: 2px;
+  -moz-background-clip: padding;
+  border-bottom-left-radius: 2px;
+  background-clip: padding-box;
+}
+.site-header .search-container .search-bar input:nth-child(2) {
+  height: 42px;
+  width: 42px;
+  overflow: hidden;
+  padding: 0 0 0 50px;
+  border: 1px solid #e6e6e6;
+  border-left: 0;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-bottomright: 2px;
+  -moz-background-clip: padding;
+  border-bottom-right-radius: 2px;
+  background-clip: padding-box;
+  background: url("../../images/wedding/wedding/icon/icon-search.png") no-repeat center center transparent;
+}
+.site-header .search-container .shop-car {
+  cursor: pointer;
+  float: right;
+  height: 42px;
+  line-height: 42px;
+  color: #4d4d4d;
+  padding: 0 30px 0 60px;
+  margin-left: 10px;
+  -webkit-border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2px;
+  -moz-background-clip: padding;
+  border-radius: 2px;
+  background-clip: padding-box;
+  background: url("../../images/wedding/wedding/icon/icon-shop-car.png") no-repeat 30px center #f1e300;
+}
+.site-header .nav {
+  width: 1100px;
+  margin: auto;
+  background-color: #e91d4a;
+  color: white;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-topright: 2px;
+  -moz-background-clip: padding;
+  border-top-right-radius: 2px;
+  background-clip: padding-box;
+}
+.site-header .nav a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+}
+.site-header .nav a:hover {
+  background-color: #EF4F72;
+}
+.site-header .nav .all-good {
+  cursor: default;
+  padding-left: 15px;
+  padding-right: 114px;
+}
+.site-header .nav .all-good:hover {
+  background-color: #e91d4a;
+}

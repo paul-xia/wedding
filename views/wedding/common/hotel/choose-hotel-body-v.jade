@@ -1,0 +1,25 @@
+.sort-plane
+    span.default.on 默认排序
+    a.click(href='') 酒店量级 ∧
+    a.click(href='') 价格 ∨
+    a.click(href='') 桌数 ∨
+    .right
+        span
+            | 找到婚宴酒店
+            i 300
+            | 家
+        span.spect |
+        a.v(href='')
+        a.h.on(href='')
+
+.choose-hotel-content
+    each val in [0,1,2,3,4,5,6,7]
+        .box-h
+            .box-in
+                img.img(href='#{baseImages}hotal/show.jpg',width='500',height='320')
+                .name 索菲思景苑宾馆
+                .stars 4.2
+                .money ￥1899-4999
+                .mark 星级酒店 | 青羊区人民中路 | 可容纳50桌
+    include ../pagination.jade
+

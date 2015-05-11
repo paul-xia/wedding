@@ -1,0 +1,41 @@
+.sort-plane
+    span.default.on 默认排序
+    a.click(href='') 酒店量级 ∧
+    a.click(href='') 价格 ∨
+    a.click(href='') 桌数 ∨
+    .right
+        span
+            | 找到婚宴酒店
+            i 300
+            | 家
+        span.spect |
+        a.v.on(href='')
+        a.h(href='')
+.choose-hotel-content
+    each val in [0,1,2,3,4,5,6,7]
+        .box-v
+            img.img(src='#{baseImage}hotal/show.jpg',width='500',height='300')
+            .title
+                span.name 索菲时辰丙谷胺
+                span.money ￥1899-4999
+            div
+                span.stars 4.2
+                span.mark 星级酒店 | 青羊区人民中路 | 可容纳50桌
+            .table
+                .th
+                    .yanhuiti 宴会厅
+                    .zuosu 桌数
+                    .cengsu 层数
+                    .zhusu 柱数
+                .tr
+                    .yanhuiti 国色天香 2F
+                    .zuosu
+                        i 50
+                        | 桌
+                    .cengsu 4米
+                    .zhusu 2
+            .bottom
+                a.look 查看宴会厅
+                a.share 分享
+                a.collection 收藏
+    include ../pagination.jade

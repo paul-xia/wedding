@@ -1,0 +1,12 @@
+//- 选择酒店竖排页面
+extends common/layout.jade
+//标题
+block title
+    title 风暴婚庆-酒店
+block style
+    link(rel='stylesheet', href='#{baseCss}hotel.css')
+block body
+    include common/hotel/choose-hotel-header.jade
+    include common/hotel/choose-hotel-body-v.jade
+block script
+    script(href="#{baseJs}hotel.js")

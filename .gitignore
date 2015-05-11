@@ -1,0 +1,32 @@
+# OS and IDE
+.emacs*
+.c9
+*.flymake
+*~
+.#*
+.idea
+*.sublime-*
+
+# bower
+bower_components
+public/bower
+
+# phpmyadmin
+phpmyadmin/*
+
+# npm
+node_modules
+npm-debug.log
+
+# project-specific
+public/css/sourcemaps/**/*
+public/js/sourcemaps/**/*
+
+# grunt & gulp
+.grunt
+.gulp
+
+# gradle
+.gradle
+out
+.htaccess

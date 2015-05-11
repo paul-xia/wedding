@@ -1,0 +1,40 @@
+// 网页尾部样式
+@import (reference, less) "../../../bower/lesshat/build/lesshat.less";
+@import (reference, less) "../maxin/marchen.less";
+
+.site-footer {
+  background-color: #fcfbf7;
+  .site-footer-in {
+    width: @site-width;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 0; /*clear fix*/
+    .clearfix;
+    .box {
+      width: 20%;
+      padding-bottom: 20px;
+      display: inline-block;
+      text-align: center;
+      line-height: 30px;
+      div {
+        font-size: 14px;
+        color:#baad93;
+      }
+      .title {
+        font-size: 16px;
+        color: @site-main-color;
+      }
+    }
+  }
+  .footer-bottom {
+    text-align: center;
+    background-color: white;
+    padding: 25px 0;
+    .box-shadow(0 -1px 1px  rgb(231, 231, 231));
+    a {
+      font-size: 14px;
+      margin-left: 50px;
+      color: #8c6a5e;
+    }
+  }
+}

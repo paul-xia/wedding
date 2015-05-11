@@ -1,0 +1,81 @@
+//- 人才页面
+extends common/layout.jade
+//标题
+block title
+    title 风暴婚庆-人才
+block style
+    link(rel='stylesheet', href='#{baseCss}talent.css')
+
+block body
+    .container
+        .choose-plane
+            ul
+                li
+                    span.label 人才类型:
+                    a.on(href='') 全部
+                    a(href='') 督导
+                    a(href='') 花艺
+                    a(href='') 摄影师
+                    a(href='') 策划
+                    a(href='') 场布兼职
+                    a(href='') 婚庆团队
+                    a(href='') 化妆师
+                    a(href='') 摄像
+                    a(href='') 主持人
+                li
+                    span.label 性别:
+                    a.on(href='') 全部
+                    a(href='') 男
+                    a(href='') 女
+                li
+                    span.label 地区:
+                    a.on(href='') 全部
+                    a(href='') 重庆
+                    a(href='') 河北
+                    a(href='') 成都
+                li
+                    span.label 价格:
+                    a.on(href='') 全部
+                    a(href='') 0-1000
+                    a(href='') 1001-2000
+                    a(href='') 2001-3000
+                    a(href='') 3000以上
+
+        .sort-plane
+            span 默认排序
+            a(href='') 价格 ∧
+            a(href='') 预定量 ∨
+            a(href='') 好评率 ∨
+
+        .talent-title 人才推荐
+        .banner-bottom
+            .banner-bottom-box
+                #banner-bottom-content.banner-bottom-box-container
+                    each val,index in [0,1,2,3,4,5,6,7]
+                        .box
+                            .box-in: a(href='')
+                                img(src='#{baseImage}talent/person.jpg', alt='' width='225' height='225')
+                                .professional  化妆师
+                                .name 小三
+            #nav-banner-bottom-prev.nav-banner-bottom-prev.nav-banner-bottom-btn(title='上一个')
+            #nav-banner-bottom-next.nav-banner-bottom-next.nav-banner-bottom-btn(title='下一个')
+
+        .talent-content
+            each val,index in [0,1,2,3,4,5,6,7,8,9]
+                .box
+                    .top
+                        img(src='#{baseImage}talent/person-1.jpg' width='175' height='200')
+                        .des
+                            .name 姓名: 人才3-化妆
+                            .cate 服务类型:　新娘全程跟妆
+                            .bili 定义比例: 12% 信誉度: 100%
+                    .say.
+                        服务说明：宴会化妆，风格唯美，三个造型...
+                    .money
+                        | 主持价：￥
+                        span 3600
+                        |/场
+        include common/pagination.jade
+// 引入脚本
+block script
+    script(src='#{baseJs}talent.js')

@@ -1,0 +1,123 @@
+// 网页头部样式
+@import (reference, less) "../../../bower/lesshat/build/lesshat.less";
+@import (reference, less)"../maxin/marchen.less";
+
+.site-header {
+  .site-header-in {
+    width: @site-width;
+    margin: 0 auto;
+    padding: 10px 0;
+    .clearfix;
+    font-size: 14px;
+    > span {
+      float: left;
+      font-size: 14px;
+      color: @site-text-color;
+    }
+    .login {
+      float: right;
+      color: #a99189;
+      vertical-align: middle;
+      a {
+        display: inline-block;
+        color: #a99189;
+      }
+      .line {
+        font-size: 16px;
+        margin: 0 4px;
+      }
+      .btn {
+        &:hover {
+          color: #4D3A33;
+        }
+      }
+    }
+  }
+  .hr {
+    width: 100%;
+    height: 1px;
+    background-color: @site-border-color;
+  }
+  .search-container {
+    .box-sizing(border-box);
+    width: @site-width;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px 0 20px 0;
+    .clearfix;
+    .logo {
+      cursor: pointer;
+      float: left;
+    }
+    .search-box {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+    }
+    .search-bar {
+      float: right;
+      .clearfix;
+      input {
+        display: block;
+        float: left;
+        color: #4d4d4d;
+      }
+      input:nth-child(1) {
+        height: 20px;
+        line-height: 20px;
+        padding: 10px 10px;
+        background-color: transparent;
+        border: 1px solid @site-border-color;
+        .border-top-left-radius(2px);
+        .border-bottom-left-radius(2px);
+      }
+      input:nth-child(2) {
+        height: 42px;
+        width: 42px;
+        overflow: hidden;
+        padding: 0 0 0 50px;
+        border: 1px solid @site-border-color;
+        border-left: 0;
+        .border-top-right-radius(2px);
+        .border-bottom-right-radius(2px);
+        background: url("@{base-images}wedding/icon/icon-search.png") no-repeat center center transparent;
+      }
+    }
+    .shop-car {
+      cursor: pointer;
+      float: right;
+      height: 42px;
+      line-height: 42px;
+      color: #4d4d4d;
+      padding: 0 30px 0 60px;
+      margin-left: 10px;
+      .border-radius(2px);
+      background: url("@{base-images}wedding/icon/icon-shop-car.png") no-repeat 30px center #f1e300;
+    }
+  }
+  .nav {
+    width: @site-width;
+    margin: auto;
+    background-color: @site-main-color;
+    color: white;
+    .border-top-left-radius(2px);
+    .border-top-right-radius(2px);
+    a {
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 15px;
+      &:hover {
+        background-color: #EF4F72;
+      }
+    }
+    .all-good {
+      cursor: default;
+      padding-left: 15px;
+      padding-right: 114px;
+      &:hover {
+        background-color: @site-main-color;
+      }
+    }
+  }
+}

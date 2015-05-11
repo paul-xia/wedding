@@ -1,0 +1,162 @@
+extends common/layout.jade
+//标题
+block title
+    title 风暴婚庆-官方网站
+block style
+    link(rel='stylesheet', href='#{baseCss}index.css')
+
+// 主体
+block body
+    .container-top
+        .nav-box
+            .nav-left
+                ul
+                    li: a(href='') 婚庆/演艺人才
+                    li: a(href='') 鲜花、道具等供应商
+                    li: a(href='') 喜烟、喜酒等商品
+                    li: a(href='') 中国婚礼大师
+                    li: a(href='') 专家授课
+                    li: a(href='') 婚庆公司
+                    li: a(href='') 全息婚礼
+                    li: a(href='') 同城互换
+                    li: a(href='') 资源案例分享
+            .nav-right
+                .banner-top
+                    #pics.pics
+                        img(src='#{baseImage}index/banner-1.jpg', alt='', width='870', height='430')
+                        img(src='#{baseImage}index/banner-2.jpg', alt='', width='870', height='430')
+                        img(src='#{baseImage}index/banner-1.jpg', alt='', width='870', height='430')
+                        img(src='#{baseImage}index/banner-2.jpg', alt='', width='870', height='430')
+                    .navgation
+                        ul#picsNav
+                            li.on
+                            li
+                            li
+                            li
+                .banner-bottom
+                    .banner-bottom-box
+                        #banner-bottom-content.banner-bottom-box-container
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-1.jpg', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-2.png', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-3.png', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-1.jpg', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-2.png', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-3.png', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-1.jpg', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-2.png', alt='')
+                            .box: a(href='')
+                                img(src='#{baseImage}index/banner-show-3.png', alt='')
+                    #nav-banner-bottom-prev.nav-banner-bottom-prev.nav-banner-bottom-btn(title='上一个')
+                    #nav-banner-bottom-next.nav-banner-bottom-next.nav-banner-bottom-btn(title='下一个')
+        .nav-bottom
+            .title 招投标
+            .scroll-plane
+                ul#nav-bottom-scroll
+                    each val,index in [0,1,2,3]
+                        li
+                            a(href='')
+                                span #{index}、
+                                | 刚刚用过一次的花篮现在不需要想转出去有需要的朋友请联系我我的电话12345678912345
+                            a.name(href='') 哆来咪哆来咪
+    .container-bottom
+        .container-bottom-in
+            div
+                .title-bar
+                    span.title 中国婚礼大师
+                    span.menu 化妆师
+                    span.menu.on 主持人
+                    span.menu 摄像师
+                    span.menu 策划师
+                    span.menu 花艺
+                    span.menu 督导
+                each val,index in [0,1,2,3,4,5]
+                    if index == 1
+                        .box.show
+                            each val in [0,1,2,3]
+                                .info
+                                    div
+                                        img(src='#{baseImage}index/index-top-1.png', alt='', width='228', height='255')
+                                        .name 婚礼主持-屈辉
+                                        a(href='')
+                                            .money
+                                                del ￥1800
+                                                |   ￥1600/场
+                    else
+                        .box
+                            each val in [0,1,2,3]
+                                .info
+                                    div
+                                        img(src='#{baseImage}index/index-top-1.png', alt='', width='228', height='255')
+                                        .name 婚礼主持-屈辉
+                                        a(href='')
+                                            .money
+                                                del ￥1800
+                                                |   ￥1600/场
+
+            div
+                .title-bar
+                    span.title 喜庆商品
+                    span.menu 喜酒
+                    span.menu 喜糖
+                    span.menu.on 地面互动
+                    span.menu 全息摄影
+                    span.menu 异形道具
+                    span.menu 道具
+                each val,index in [0,1,2,3,4,5]
+                    if index == 2
+                        .box.show
+                            each val in [0,1,2,3]
+                                .info
+                                    div
+                                        img(src='#{baseImage}index/index-bottom-1.png', alt='', width='228', height='255')
+                                        .name 42°今世缘高档蓝真酿500ml
+                                        a(href='')
+                                            .money
+                                                del ￥600
+                                                |   ￥72
+                    else
+                        .box
+                            each val in [0,1,2,3]
+                                .info
+                                    div
+                                        img(src='#{baseImage}index/index-bottom-1.png', alt='', width='228', height='255')
+                                        .name 42°今世缘高档蓝真酿500ml
+                                        a(href='')
+                                            .money
+                                                del ￥600
+                                                |   ￥72
+
+
+
+    // /主体
+    // 安全说明
+    .safe
+        .safe-in
+            .box
+                | 资金担保
+                div 找我们服务绝对好
+            .box
+                | 价格透明
+                div 样样都是成本价
+            .box
+                | 全程统筹
+                div 只收服务绝不赚差价
+            .box
+                | 全面监管
+                div 婚礼管家一对一监管
+    // /安全说明
+
+
+// 引入脚本
+block script
+    script(src='#{baseJs}index.js')
+
+
