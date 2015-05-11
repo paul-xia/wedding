@@ -55,18 +55,10 @@
     }
     .search-bar {
       float: right;
-      .cf;
       input {
-        display: block;
+        display: block; .lh(42px); border: 1px solid @site-border-color;
         float: left;
-        color: #4d4d4d;
-      }
-      input:nth-child(1) {
-        height: 20px;
-        line-height: 20px;
-        padding: 10px 10px;
-        background-color: transparent;
-        border: 1px solid @site-border-color;
+        color: #4d4d4d; padding: 0 15px;
       }
       input:nth-child(2) {
         height: 42px;
@@ -74,8 +66,7 @@
         overflow: hidden;
         padding: 0 0 0 50px;
         border: 1px solid @site-border-color;
-        border-left: 0;
-        background: url("@{base-images}wedding/icon/icon-search.png") no-repeat center center transparent;
+        border-left: 0; .bg("icon-search.png", no-repeat, center center);
       }
     }
     .shop-car {
@@ -87,7 +78,7 @@
       padding: 0 30px 0 60px;
       margin-left: 10px;
       .border-radius(2px);
-      background: url("@{base-images}wedding/icon/icon-shop-car.png") no-repeat 30px center #f1e300;
+      .bg("icon-shop-car.png", no-repeat, 30px center, #f1e300);
     }
   }
   .nav {
@@ -99,7 +90,7 @@
       display: inline-block;
       height: 50px;
       line-height: 50px;
-      padding: 0 15px;
+      padding: 0 15px; font-size: 18px;
       &:hover {
         background-color: #EF4F72;
       }

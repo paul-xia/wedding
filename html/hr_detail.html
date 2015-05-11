@@ -1,0 +1,63 @@
+
+    <%- include('common/head', { style: 'hr'}) %>
+    <%- include('common/header') %>
+    <div class="container">
+
+        <div class="hr-info cf">
+            <img class="fl head">
+            <div class="info fr">
+                <h1>姓名：人才3-化妆</h1>
+                <p><span class="ms-wp">价格：￥1500.99元/场</span><del>1800元</del></p>
+                <p><span class="ms-wp">预定量：0场</span><span class="ms-wp">定金：12%</span></p>
+                <p><span class="ms-wp">解约率：0.00%</span><span class="ms-wp">评价：<i class="star_bar"></i>5.0分</span> <span class="num">5</span>个用户评论</p>
+                <div class="type">
+                    <span class="di">服务类型：</span>
+                    <span class="di type_b">新娘全程跟妆<i></i></span> 
+                    <span class="di get_address">获取联系方式和地址（免费）</span><i class="di phone"></i>
+                </div>
+
+                <div class="btn_wrap">
+                    <a class="show_time">查看档期</a>
+                    <a class="get_time">预约</a>
+                    <a class="talk_now"><i class="di"></i><span class="di">在线咨询</span></a>
+                </div>
+
+                <p class="service">服务说明：<span>宴会画什么装妆！宴会画什么装妆！宴会画什么装妆！</span></p>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <a href="#introduction" class="on">个人简介</a>
+            <a href="" title="">服务内容</a>
+            <a href="" title="">个人作品</a>
+            <a href="" title="">最新预定</a>
+            <a href="" title="">用户点评</a>
+            <a href="" title="">预约说明</a>
+        </div>
+
+        <div class="sess-info">
+            <!-- 简介 -->
+            <div class="pers_intro" id="persIntro"></div>
+
+            <!-- 服务内容 -->
+            <div class="service_type" id="serviceType"></div>
+
+            <!-- 个人作品 -->
+            <div class="personal_work" id="personalWork"></div>
+
+            <!-- 最新预定 -->
+            <div class="new_scheduled" id="newScheduled"></div>
+
+            <!-- 用户点评 -->
+            <div class="user_msg" id="userMsg"></div>
+
+            <!-- 预约说明 -->
+            <div class="app_intro" id="appIntro"></div>
+        </div>
+    </div>
+<!-- 尾部-->
+    <%- include('common/footer') %>
+    <%- include('common/script') %>
+    <script src="../../public/js/wedding/index.js"></script>
+  </body>
+</html>

@@ -102,12 +102,10 @@ body {
       height: 200px;
     }
     .nav-banner-bottom-prev {
-      left: 0;
-      background: url("@{base-images}wedding/icon/icon-prev.png") no-repeat center center transparent;
+      left: 0; .bg("icon-prev.png", no-repeat, center center);
     }
     .nav-banner-bottom-next {
-      right: 0;
-      background: url("@{base-images}wedding/icon/icon-next.png") no-repeat center center transparent;
+      right: 0; .bg("icon-next.png", no-repeat, center center);
     }
     .nav-banner-bottom-btn {
       cursor: pointer;
@@ -245,17 +243,9 @@ body {
         margin-top: 10px;
       }
     }
-    .box:nth-child(1) {
-      background: url("@{base-images}wedding/index/footer-bg-1.png") no-repeat center 30px transparent;
-    }
-    .box:nth-child(2) {
-      background: url("@{base-images}wedding/index/footer-bg-2.png") no-repeat center 30px transparent;
-    }
-    .box:nth-child(3) {
-      background: url("@{base-images}wedding/index/footer-bg-3.png") no-repeat center 30px transparent;
-    }
-    .box:nth-child(4) {
-      background: url("@{base-images}wedding/index/footer-bg-4.png") no-repeat center 30px transparent;
-    }
+    .box:nth-child(1) { .bg("footer-bg-1.png", no-repeat, center 30px); }
+    .box:nth-child(2) { .bg("footer-bg-2.png", no-repeat, center 30px); }
+    .box:nth-child(3) { .bg("footer-bg-3.png", no-repeat, center 30px); }
+    .box:nth-child(4) { .bg("footer-bg-4.png", no-repeat, center 30px); }
   }
 }

@@ -89,8 +89,7 @@ body {background-color: #ffffff;}
     margin-left: 35px;
     z-index: 10;
     width: 70px;
-    height: 30px;
-    background: url("@{base-images}icon/icon-up-arrow.png") no-repeat center center #f4efef;
+    height: 30px; .bg("icon-up-arrow.png", no-repeat, center center, #f4efef);
   }
 }
 
@@ -121,20 +120,14 @@ body {background-color: #ffffff;}
     }
     .h {
       padding: 16px;
-      margin-right: 25px;
-      background: url("@{base-images}icon/icon-h.png") no-repeat center center transparent;
+      margin-right: 25px; .bg("icon-h.png", no-repeat, center center);
     }
-    .h.on {
-      background: url("@{base-images}icon/icon-h-on.png") no-repeat center center transparent;
-    }
+    .h.on { .bg("icon-h-on.png", no-repeat, center center); }
     .v {
       padding: 16px;
-      margin-right: 25px;
-      background: url("@{base-images}icon/icon-v.png") no-repeat center center transparent;
+      margin-right: 25px; .bg("icon-v.png", no-repeat, center center);
     }
-    .v.on {
-      background: url("@{base-images}icon/icon-v-on.png") no-repeat center center transparent;
-    }
+    .v.on { .bg("icon-v-on.png", no-repeat, center center); }
   }
 }
 
