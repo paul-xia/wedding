@@ -1,5 +1,19 @@
 @import url(lib.less);
 @import url(reset.less);
+.cf{.cf}
+.omit{.omit}
+.di{.di}
+.tcc{color: @tc;}
+textarea{ border-radius: 4px; border:1px solid @bdc;
+  &:focus{ border-color: #8E8E8E;}
+}
+.abtn{ cursor: pointer; background-color: #f4b800; color: #fff; border-radius: 4px; .di; width: 182px; .lh(45px); font-size: 18px; text-align: center;
+  &:hover{.op(90);}
+  &:active{.op(100);}
+}
+.abtn_disabled{
+  background-color: #cccccc; cursor: default;
+}
 //header
 .site-header {
   .site-header-in {

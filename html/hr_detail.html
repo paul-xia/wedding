@@ -1,63 +1,397 @@
 
     <%- include('common/head', { style: 'hr'}) %>
     <%- include('common/header') %>
-    <div class="container">
+    <div class="container" id="mainWrapper">
 
         <div class="hr-info cf">
-            <img class="fl head">
-            <div class="info fr">
+            <img class="fl head" src="../images/per_head.jpg" width="375" height="375">
+            <div class="info">
                 <h1>姓名：人才3-化妆</h1>
                 <p><span class="ms-wp">价格：￥1500.99元/场</span><del>1800元</del></p>
                 <p><span class="ms-wp">预定量：0场</span><span class="ms-wp">定金：12%</span></p>
-                <p><span class="ms-wp">解约率：0.00%</span><span class="ms-wp">评价：<i class="star_bar"></i>5.0分</span> <span class="num">5</span>个用户评论</p>
-                <div class="type">
+                <div class="feld">
+                    <span class="ms-wp di">解约率：0.00%</span>
+                    <div class="di">
+                        <span class="di">评价：</span>
+                        <i class="star_bar di"><b style="width: 80%"></b></i>
+                    </div>
+                    <span class="di">5.0分</span>
+                    <span class="num di">5个用户评论</span>
+                </div>
+                <div class="feld type">
                     <span class="di">服务类型：</span>
-                    <span class="di type_b">新娘全程跟妆<i></i></span> 
+                    <span class="di serv_type">新娘全程跟妆<i></i></span> 
                     <span class="di get_address">获取联系方式和地址（免费）</span><i class="di phone"></i>
                 </div>
 
-                <div class="btn_wrap">
-                    <a class="show_time">查看档期</a>
-                    <a class="get_time">预约</a>
-                    <a class="talk_now"><i class="di"></i><span class="di">在线咨询</span></a>
+                <div class="feld btn_wrap">
+                    <a class="show_time abtn">查看档期</a>
+                    <a class="get_time abtn">预约</a>
+                    <a class="talk_now di"><i class="di"></i><span class="di">在线咨询</span></a>
                 </div>
 
                 <p class="service">服务说明：<span>宴会画什么装妆！宴会画什么装妆！宴会画什么装妆！</span></p>
             </div>
         </div>
 
-        <div class="nav-bar">
-            <a href="#introduction" class="on">个人简介</a>
-            <a href="" title="">服务内容</a>
-            <a href="" title="">个人作品</a>
-            <a href="" title="">最新预定</a>
-            <a href="" title="">用户点评</a>
-            <a href="" title="">预约说明</a>
+        <div class="nav-bar" id="navBar">
+            <a href="#persIntro" class="on">个人简介</a>
+            <a href="#serviceType" title="">服务内容</a>
+            <a href="#personalWork" title="">个人作品</a>
+            <a href="#newScheduled" title="">最新预定</a>
+            <a href="#userMsg" title="">用户点评</a>
+            <a href="#appIntro" title="" class="last">预约说明</a>
         </div>
 
         <div class="sess-info">
             <!-- 简介 -->
-            <div class="pers_intro" id="persIntro"></div>
+            <div class="pers_intro" id="persIntro">
+                <p class="base_info">
+                    <span>昵称：人才4</span>
+                    <span>姓名：张xx</span>
+                    <span>年龄：29</span>
+                    <span>身高：167CM</span>
+                    <span>体重：55KG</span>
+                </p>
+                <p class="address">
+                    <i class="addr di"></i>
+                    <span class="di">所在地区：成都市</span>
+                    <i class="pho"></i>
+                    <span class="di tcc">15200000202</span>
+                </p>
+                <p class="tag">
+                    <span class="di">职业标签：</span>
+                    <span class="di tag_b">明场婚礼</span>
+                    <span class="di tag_b">暗场婚礼</span>
+                    <span class="di tag_b">中式婚礼</span>
+                    <span class="di tag_b">教堂婚礼</span>
+                    <span class="di tag_b">草坪婚礼</span>
+                </p>
+                <p>用心态表达每一次幸福的瞬间</p>
+            </div>
 
             <!-- 服务内容 -->
-            <div class="service_type" id="serviceType"></div>
+            <div class="service_type" id="serviceType">
+                <h2>服务内容</h2>
+                <h3>服务区域</h3>
+                <div class="area_list">
+                    <p>
+                        <span class="prov">四川省</span>
+                        <span class="city">成都市</span>
+                    </p>
+                    <p>
+                        <span class="prov">四川省</span>
+                        <span class="city">成都市</span>
+                    </p>
+                </div>
+
+                <h3>异地费</h3>
+                <div class="money_table">
+                    <table>
+                        <caption>根据实际远近，收取异地费</caption>
+                        <thead>
+                            <tr>
+                                <th width="160">服务类型</th>
+                                <th width="140">服务价格</th>
+                                <th >服务说明</th>
+                                <th width="200"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>婚礼策划统筹</td>
+                                <td class="tcc">￥1500</td>
+                                <td class="tl"> 提供婚礼全程策划及统筹。初次见面了解新人的需求，制作策划案，并进行第二次厂家布置及婚礼仪式流程的沟通设计。最终确认婚礼细节！</td>
+                                <td><a class="abtn">立即预约</a></td>
+                            </tr>
+                             <tr>
+                                <td>婚礼策划统筹</td>
+                                <td class="tcc">￥1500</td>
+                                <td class="tl"> 提供婚礼全程策划及统筹。初次见面了解新人的需求，制作策划案，并进行第二次厂家布置及婚礼仪式流程的沟通设计。最终确认婚礼细节！</td>
+                                <td><a class="abtn">立即预约</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
             <!-- 个人作品 -->
-            <div class="personal_work" id="personalWork"></div>
+            <div class="personal_work" id="personalWork">
+                <h2>个人作品</h2>
+                <div class="work_line">
+                    <span class="line"></span>
+
+                    <div class="work_box">
+                        <span class="work_name tcc">视频<i></i></span>
+                        <div class="work_item">
+                            <ul>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="work_box">
+                        <span class="work_name tcc">视频<i></i></span>
+                        <div class="work_item">
+                            <ul>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="imgbox">
+                                        <a class="play"></a>
+                                        <img src="../images/tvshow.jpg" alt="">
+                                    </div>
+                                    <p class="cf">
+                                        <span class="name fl">金牌主持人-岑天天</span>
+                                        <span class="fr times">浏览188次</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- 最新预定 -->
-            <div class="new_scheduled" id="newScheduled"></div>
+            <div class="new_scheduled" id="newScheduled">
+                <h2>最新预定</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="200">已预定档期</th>
+                            <th width="200">服务类型</th>
+                            <th width="200">价格</th>
+                            <th width="200">预定人</th>
+                            <th width="200">预定时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tcc">2015-05-02 07:00至14:00</td>
+                            <td>婚礼策划统筹</td>
+                            <td class="tcc">1280</td>
+                            <td>郭德纲</td>
+                            <td>2015-04-20 18:30</td>
+                        </tr>
+                        <tr>
+                            <td class="tcc">2015-05-02 07:00至14:00</td>
+                            <td>婚礼策划统筹</td>
+                            <td class="tcc">1280</td>
+                            <td>郭德纲</td>
+                            <td>2015-04-20 18:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <!-- 用户点评 -->
-            <div class="user_msg" id="userMsg"></div>
+            <div class="user_msg" id="userMsg">
+                <a class="show_more tcc" href="">查看点评</a>
+                <h2>用户点评</h2>
+                <div class="get_cout cf">
+
+                    <div class="fl num_cout">
+                        <p class="num tcc">4.2</p>
+                        <p><i class="star_bar di"><b style="width: 80%"></b></i></p>
+                        <p>共有<i class="tcc">14</i>个用户点评</p>
+                    </div>
+
+                    <div class="fl bar_cout">
+                        <div class="bar">
+                            <span class="name">态度：4.0分</span>
+                            <i class="bar_line"><b style="width:80%"></b></i>
+                        </div>
+                        <div class="bar">
+                            <span class="name">质量：4.0分</span>
+                            <i class="bar_line"><b style="width:80%"></b></i>
+                        </div>
+                        <div class="bar">
+                            <span class="name">服务：4.0分</span>
+                            <i class="bar_line"><b style="width:80%"></b></i>
+                        </div>
+                    </div>
+
+                    <div class="fl i_try">
+                        <a href="" title="" class="abtn">我要点评</a>
+                    </div>
+                </div>
+
+                <div class="inner_list">
+                    <ul>
+                        <li class="cf">
+                            <a class="fl uh">
+                                <img src="../images/person.jpg" alt="">
+                            </a>
+                            <div class="fl un">
+                                <p>大少爷</p>
+                                <p class="time">2015-02-19</p>
+                            </div>
+                            <div class="fl ui">
+                                <p>
+                                    <i class="star_bar"><b style="width:80%"></b></i>
+                                    <span>5分</span>
+                                    <span>态度：4分</span>
+                                    <span>质量：4分</span>
+                                    <span>服务：4分</span>
+                                </p>
+                                <div class="entry">
+                                    <span class="msg">参加婚宴去的，感觉萌萌哒</span>
+                                    <span class="address">索菲丝景苑宾馆</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cf">
+                            <a class="fl uh">
+                                <img src="../images/person.jpg" alt="">
+                            </a>
+                            <div class="fl un">
+                                <p>大少爷</p>
+                                <p class="time">2015-02-19</p>
+                            </div>
+                            <div class="fl ui">
+                                <p>
+                                    <i class="star_bar"><b style="width:80%"></b></i>
+                                    <span>5分</span>
+                                    <span>态度：4分</span>
+                                    <span>质量：4分</span>
+                                    <span>服务：4分</span>
+                                </p>
+                                <div class="entry">
+                                    <span class="msg">参加婚宴去的，感觉萌萌哒</span>
+                                    <span class="address">索菲丝景苑宾馆</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="add_msg">
+                    <div class="form_t">我要评论</div>
+                    <div class="cf">
+                        <div class="get_star fl">
+                            <p class="form_note"><i class="tcc">*</i>请点击图标进行评分</p>
+                            <p class="do_cout">
+                                综合评分：<span class="num">4</span>分
+                            </p>
+                            <p><span class="bar_name di">态度</span><i class="star_bar"><b style="width:80%"></b></i></p>
+                            <p><span class="bar_name di">质量</span><i class="star_bar"><b style="width:80%"></b></i></p>
+                            <p><span class="bar_name di">服务</span><i class="star_bar"><b style="width:80%"></b></i></p>
+                        </div>
+
+                        <div class="msg">
+                            <p class="note">20-500个字</p>
+                            <textarea name="" maxlength="500" minlength="20" placeholder="写下您的感受"></textarea>
+                            <p class="submit">
+                                <input type="submit" class="abtn abtn_disabled" value="提交评论">
+                            </p>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
 
             <!-- 预约说明 -->
-            <div class="app_intro" id="appIntro"></div>
+            <div class="app_intro" id="appIntro">
+                <h2>预定说明</h2>
+                <div class="entry">
+                    <h3>接受预定</h3>
+                    <p>1.向新人介绍服务内容及演示案例，了解新人婚礼需求；</p>
+
+                    <p>2.找我网策划师全程1对1服务，服务质量有保障；</p>
+
+                    <p>方案报价</p>
+
+                    <p>1.勘察场地，获取婚礼现场布置数据；</p>
+
+                    <p>2.编写婚礼布置方案（如提供手绘或3D效果图，需支付出图费用）；</p>
+
+                    <p>3.确定布置方案及提供婚礼报价明细（成本价）；</p>
+
+                    <p>签订婚礼布置协议</p>
+
+                    <p>1.签订婚礼布置三方协议，向新人详细说明协议条款；</p>
+
+                    <p>2.协助新人在找我网支付婚礼布置首付款；</p>
+
+                    <p>婚礼筹备</p>
+
+                    <p>1.资源统筹</p>
+
+                    <p>2.协助新人在找我网支付婚礼布置首付款 <a href="" title="" class="tcc">[ 更多 ]</a></p>
+                </div>
+            </div>
         </div>
     </div>
 <!-- 尾部-->
     <%- include('common/footer') %>
     <%- include('common/script') %>
-    <script src="../../public/js/wedding/index.js"></script>
+    <script src="../script/modules/hr.js"></script>
   </body>
 </html>

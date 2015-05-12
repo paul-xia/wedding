@@ -156,3 +156,144 @@ body {
     }
   }
 }
+
+.bgs(@p){
+  .bg("hr_icon.png", no-repeat, @p)
+}
+.star_bar{ width: 78px; height: 14px; .bgs(0 -18px); .di;
+  b{  .bgs(0 0); display: block; height: 14px; width: 0;}
+}
+//hr detail
+.hr-info{ margin-top: 26px;
+  
+  img{ margin-right: 26px;}
+  h1{ font-size: 30px; margin-bottom: 40px;}
+  .info{ margin-left: 400px; font-size: 16px;
+    p,.feld{ margin-bottom: 24px;}
+    .serv_type{color: @tc; border: 2px solid @tc; position: relative; padding: 8px 25px; border-radius: 2px; overflow: hidden; margin-right: 20px;
+      i{ position: absolute; right: 0; bottom: 0; .bgs(0px -124px); width: 28px; height: 31px;}
+    }
+    .get_address{ color: @tc;}
+    .phone{ width: 13px; height: 18px; .bgs(-2px -92px);}
+    .show_time{ background-color: #01b5ae; margin-right: 18px;}
+    .get_time{ margin-right: 18px;}
+    .talk_now{
+      i{ width: 31px; height: 29px; .bgs(-40px -127px); margin-right: 5px;}
+    }
+    .num{ margin-left: 20px;}
+
+  }
+
+  
+  
+  .ms-wp{ padding-right: 40px;}
+}
+.nav-bar{ font-size: 0; border: 1px solid @bdc; margin-bottom: 20px; background-color: #fff;
+  a{ font-size: 18px; .di; text-align: center; width: 182px; border-right: 1px solid @bdc;border-left: 1px solid @bdc; margin-left: -1px}
+  .on{ color: @tc; .lh(60px); border-top: 2px solid @tc; margin-top: -1px; border-bottom: 1px solid #fff; margin-bottom: -1px;}
+  .last{ border-right: 0;}
+}
+.nav-bar-float{
+  .hr-info{ margin-bottom: 63px;}
+  .nav-bar{position: fixed; top: 0; z-index: 100;}
+}
+.sess-info{
+   font-size: 14px;
+   h2{ font-size: 20px; border-bottom: 2px solid @bdc; .lh(50px); margin-bottom: 20px;}
+}
+
+.pers_intro{
+  p{ margin-bottom: 20px;}
+  .base_info{
+    span{ padding-right: 50px;}
+  }
+  .addr{.bgs(-45px -93px); width: 12px; height: 17px;}
+  .tag_b{ background-color: #f1f1f1; border: 1px solid #e6e6e6; border-radius: 2px; margin-right: 5px; .lh(26px); padding: 0 5px}
+}
+
+.service_type{
+  h3{ margin-bottom: 10px;}
+  p{ margin-bottom: 10px;}
+  .city{ background-color: #f1f1f1; padding: 0 5px; .lh(26px)}
+  .money_table{
+    caption{ padding-bottom: 20px;}
+    table{ text-align: center;}
+    thead{ background-color: #f1f1f1; font-weight: bold;}
+    th{ text-align: center; padding: 10px 0}
+    td{ padding:  10px}
+    .abtn{}
+    .tl{ text-align: left;}
+  }
+}
+
+.personal_work{
+  .work_line{ position: relative;}
+  .line{ position: absolute; left: 10px; top: 0; width: 1px; background-color: @bdc; height: 100%;}
+  .work_box{ margin-left: 90px; position: relative; margin-bottom: 30px;}
+  .work_name{ position: absolute; left: -71px; top: 50%; margin-top: -14px; font-size: 18px;
+    i{ position: absolute; left: -15px; top: 8px; .bgs(-65px -95px); width: 13px; height: 13px;}
+  }
+  .work_item{ overflow: hidden;
+    ul{.cf; margin-right: -20px}
+    li{float: left; margin-right: 20px;
+      p{ line-height: 30px;}
+    }
+    .imgbox{ position: relative; margin-bottom: 10px;}
+    .play{ position: absolute; top: 50%; left:50%; margin:-24px 0 0 -20px; width: 40px; height: 48px; z-index: 1; .bgs(-1px -178px)}
+    .times{ background-color: #ebebeb; border-radius: 30px; padding: 0 10px;}
+  }
+}
+
+.new_scheduled{
+  table{ text-align: center;}
+  thead{ background-color: #f1f1f1; font-weight: bold;}
+  th{ text-align: center; padding: 10px 0}
+  td{ padding:  10px}
+}
+
+.user_msg{
+  position: relative;
+  .show_more{ position: absolute; top: 20px; right: 10px; font-size: 16px;}
+  .get_cout{ margin-bottom: 30px;}
+  .num_cout{ text-align: center; width: 145px; margin-right: 100px;
+    .num{font-size: 36px;}
+  }
+  .bar_cout{width:330px;
+    .bar{ margin-bottom: 10px;}
+    .name,.bar_line{.di}
+    .bar_line{ background-color: #e2e2e2; height: 13px; width: 125px; border-radius: 13px;
+      b{ display: block; width: 0; background-color: @tc;  height: 13px; border-radius: 13px;}
+    }
+  }
+  .i_try{ margin-top: 23px;}
+
+  .inner_list{ margin-bottom: 20px;
+    li{ border-top: 1px solid @bdc; border-bottom: 1px solid @bdc; margin-bottom: -1px; padding: 25px;}
+    .uh{ margin-right: 15px;
+      img{ width: 80px; height: 80px; border-radius: 20px;}
+    }
+    .un{ width: 135px; margin-top: 10px;}
+    .ui{ margin-top: 10px;
+      .bar_line,span{.di;}
+      p{ margin-bottom: 18px;}
+      .address{ color: #ccc;}
+    }
+  }
+
+  .add_msg{
+    .form_t{ font-size: 20px; margin-bottom: 10px;}
+    .get_star{ width: 250px;
+      p{ margin-bottom: 10px;}
+    }
+    .bar_name { margin-right: 10px;}
+
+    .msg{ margin-left: 270px;
+      .note{ text-align: right;}
+      textarea{   width: 805px; padding: 10px; height:6rem;}
+    }
+  }
+}
+
+.app_intro{
+  line-height: 30px; margin-bottom: 40px;
+}
