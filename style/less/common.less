@@ -4,6 +4,8 @@
 .omit{.omit}
 .di{.di}
 .tcc{color: @tc;}
+.wrap{ width: @site-width; margin: 0 auto;}
+.ver-mark{ .di; height: 100%;}
 textarea{ border-radius: 4px; border:1px solid @bdc;
   &:focus{ border-color: #8E8E8E;}
 }
@@ -15,37 +17,38 @@ textarea{ border-radius: 4px; border:1px solid @bdc;
   background-color: #cccccc; cursor: default;
 }
 //header
-.site-header {
-  .site-header-in {
-    width: @site-width;
-    margin: 0 auto;
-    padding: 10px 0;
-    .cf;
+.site-header-in {
+  min-width: @site-width; background-color: #fafafa;
+  padding: 10px 0;
+  .cf;
+  font-size: 14px;
+  border-bottom: 1px solid @bdc;
+  span {
+    float: left;
     font-size: 14px;
-    > span {
-      float: left;
-      font-size: 14px;
-      color: @site-text-color;
-    }
-    .login {
-      float: right;
+    color: @site-text-color;
+  }
+  .login {
+    float: right;
+    color: #a99189;
+    vertical-align: middle;
+    a {
+      display: inline-block;
       color: #a99189;
-      vertical-align: middle;
-      a {
-        display: inline-block;
-        color: #a99189;
-      }
-      .line {
-        font-size: 16px;
-        margin: 0 4px;
-      }
-      .btn {
-        &:hover {
-          color: #4D3A33;
-        }
+    }
+    .line {
+      font-size: 16px;
+      margin: 0 4px;
+    }
+    .btn {
+      &:hover {
+        color: #4D3A33;
       }
     }
   }
+}
+.site-header {
+  
   .hr {
     width: 100%;
     height: 1px;
@@ -190,5 +193,117 @@ textarea{ border-radius: 4px; border:1px solid @bdc;
       background-color: @site-main-color;
       border-color: @site-main-color;;
     }
+  }
+}
+//标星打分
+.star_bar{ width: 78px; height: 14px; .bgs(0 -18px); .di;
+  b{  .bgs(0 0); display: block; height: 14px; width: 0;}
+}
+
+//公用导航效果
+.nav-bar{ font-size: 0; border: 1px solid @bdc; margin-bottom: 20px; background-color: #fff;
+  a{ font-size: 18px; .di; text-align: center; width: 182px; border-right: 1px solid @bdc;border-left: 1px solid @bdc; margin-left: -1px}
+  .on{ color: @tc; .lh(60px); border-top: 2px solid @tc; margin-top: -1px; border-bottom: 1px solid #fff; margin-bottom: -1px;}
+  .last{ border-right: 0;}
+}
+
+
+//留言系列效果
+.sess-info{ font-size: 14px;
+  h2{ font-size: 20px; border-bottom: 2px solid @bdc; .lh(50px); margin-bottom: 20px;}
+  .pers_intro{
+    p{ margin-bottom: 20px;}
+    .base_info{
+      span{ padding-right: 50px;}
+    }
+    .addr{.bgs(-45px -93px); width: 12px; height: 17px;}
+    .tag_b{ background-color: #f1f1f1; border: 1px solid #e6e6e6; border-radius: 2px; margin-right: 5px; .lh(26px); padding: 0 5px}
+  }
+
+  .service_type{
+    h3{ margin-bottom: 10px;}
+    p{ margin-bottom: 10px;}
+    .city{ background-color: #f1f1f1; padding: 0 5px; .lh(26px)}
+    .money_table{
+      caption{ padding-bottom: 20px;}
+      table{ text-align: center;}
+      thead{ background-color: #f1f1f1; font-weight: bold;}
+      th{ text-align: center; padding: 10px 0}
+      td{ padding:  10px}
+      .abtn{}
+      .tl{ text-align: left;}
+    }
+  }
+
+  .personal_work{
+    .work_line{ position: relative;}
+    .line{ position: absolute; left: 10px; top: 0; width: 1px; background-color: @bdc; height: 100%;}
+    .work_box{ margin-left: 90px; position: relative; margin-bottom: 30px;}
+    .work_name{ position: absolute; left: -71px; top: 50%; margin-top: -14px; font-size: 18px;
+      i{ position: absolute; left: -15px; top: 8px; .bgs(-65px -95px); width: 13px; height: 13px;}
+    }
+    .work_item{ overflow: hidden;
+      ul{.cf; margin-right: -20px}
+      li{float: left; margin-right: 20px;
+        p{ line-height: 30px;}
+      }
+      .imgbox{ position: relative; margin-bottom: 10px;}
+      .play{ position: absolute; top: 50%; left:50%; margin:-24px 0 0 -20px; width: 40px; height: 48px; z-index: 1; .bgs(-1px -178px)}
+      .times{ background-color: #ebebeb; border-radius: 30px; padding: 0 10px;}
+    }
+  }
+
+  .new_scheduled{
+    table{ text-align: center;}
+    thead{ background-color: #f1f1f1; font-weight: bold;}
+    th{ text-align: center; padding: 10px 0}
+    td{ padding:  10px}
+  }
+
+  .user_msg{
+    position: relative;
+    .show_more{ position: absolute; top: 20px; right: 10px; font-size: 16px;}
+    .get_cout{ margin-bottom: 30px;}
+    .num_cout{ text-align: center; width: 145px; margin-right: 100px;
+      .num{font-size: 36px;}
+    }
+    .bar_cout{width:330px;
+      .bar{ margin-bottom: 10px;}
+      .name,.bar_line{.di}
+      .bar_line{ background-color: #e2e2e2; height: 13px; width: 125px; border-radius: 13px;
+        b{ display: block; width: 0; background-color: @tc;  height: 13px; border-radius: 13px;}
+      }
+    }
+    .i_try{ margin-top: 23px;}
+
+    .inner_list{ margin-bottom: 20px;
+      li{ border-top: 1px solid @bdc; border-bottom: 1px solid @bdc; margin-bottom: -1px; padding: 25px;}
+      .uh{ margin-right: 15px;
+        img{ width: 80px; height: 80px; border-radius: 20px;}
+      }
+      .un{ width: 135px; margin-top: 10px;}
+      .ui{ margin-top: 10px;
+        .bar_line,span{.di;}
+        p{ margin-bottom: 18px;}
+        .address{ color: #ccc;}
+      }
+    }
+
+    .add_msg{
+      .form_t{ font-size: 20px; margin-bottom: 10px;}
+      .get_star{ width: 250px;
+        p{ margin-bottom: 10px;}
+      }
+      .bar_name { margin-right: 10px;}
+
+      .msg{ margin-left: 270px;
+        .note{ text-align: right;}
+        textarea{   width: 805px; padding: 10px; height:6rem;}
+      }
+    }
+  }
+
+  .app_intro{
+    line-height: 30px; margin-bottom: 40px;
   }
 }

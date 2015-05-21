@@ -26,7 +26,9 @@ module.exports = function(grunt) {
                     'dest/style/css/common.css': 'style/less/common.less',
                     'dest/style/css/index.css': 'style/less/index.less',
                     'dest/style/css/hotel.css': 'style/less/hotel.less',
-                    'dest/style/css/hr.css': 'style/less/hr.less'
+                    'dest/style/css/hr.css': 'style/less/hr.less',
+                    'dest/style/css/wedding_dress.css': 'style/less/wedding_dress.less',
+                    'dest/style/css/passport.css': 'style/less/passport.less',
                 }
             },
             watch: {
