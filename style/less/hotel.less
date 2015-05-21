@@ -295,12 +295,17 @@ body {background-color: #ffffff;}
 }
 
 
-.sess-info{
+.sess-info{ font-size: 16px;
   .hotel_intro{ 
-    .base_info{background-color: #fefbf0; border: 1px solid @bdc; padding: 30px; margin-bottom: 20px;}
+    .base_info{background-color: #fefbf0; border: 1px solid @bdc; padding: 30px 30px 10px; margin-bottom: 20px; .cf;
+      span{ float: left; width: 340px; margin-bottom: 20px;}
+    }
     .js{color: #888888;}
-    .open{
-      i{}
+    .open{position: relative; padding-right: 1px;
+      i{ width: 14px; height: 8px; .bgs(-54px -314px);position: absolute; top: 8px; left: 35px;}
+    }
+    .close{
+      i{.bgs(-77px -314px);}
     }
   }
 }
