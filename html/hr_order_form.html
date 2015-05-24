@@ -1,0 +1,214 @@
+
+    <%- include('common/head', { style: 'hr'}) %>
+    <%- include('common/header') %>
+    <div class="container">
+        <form class="order_form" method="post" id="writeOrder" novalidate="novalidate">
+            <div class="gwc wrap">
+                <h2>预订信息</h2>
+                <table border="0" align="center" cellpadding="0" cellspacing="0" class="protable">
+                    <tbody><tr>
+                        <td width="15%" align="right">职业者姓名：</td>
+                        <td width="85%">
+                            <span class="di">家豪</span>&emsp;<i class="star_bar di"><b style="width: 80%"></b></i>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" width="15%">职业：</td>
+                        <td width="85%">策划师</td>
+                    </tr>
+                    <tr>
+                        <td align="right" width="15%">联系电话：</td>
+                        <td width="85%">15680511801</td>
+                    </tr>
+                    
+                    
+                    <tr class="trs97bf6d07-deea-4af8-95a3-983472b63306">
+                        <td align="right" width="15%">服务类型：</td>
+                        <td width="85%">婚礼策划统筹</td>
+                    </tr>
+                    
+                    <tr class="trs97bf6d07-deea-4af8-95a3-983472b63306">
+                        <td align="right" valign="top" width="15%">找我报价：</td>
+                        <td width="85%" id="price97bf6d07-deea-4af8-95a3-983472b63306"><span class="num">￥2000元</span></td>
+                    </tr>
+                    <tr class="trs97bf6d07-deea-4af8-95a3-983472b63306">
+                        <td align="right" valign="top" width="15%">服务说明：</td>
+                        <td class="indro" width="85%" style="padding-right: 185px;word-wrap:break-word;" id="memo97bf6d07-deea-4af8-95a3-983472b63306">
+                            1/约见新人了解需求，确认是否订单。
+                            2/勘测场地，做场景方案，同时辅导新人进行婚前准备。
+                            3/头天组织团队人员布场，并协助主持人完成仪式彩排。
+                            4/婚礼当天负责整体流程管控，并担任仪式督导。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" align="right" valign="top">婚礼时间：</td>
+                        <td width="85%">
+                            <p style="display: inline-block;width: 520px;">
+                                
+                                <span class="select01"><input type="text" value="" name="start" placeholder="婚礼时间" id="start" onclick="$('#start').datetimepicker('show');" readonly=""></span>
+                                <span class="hlsj"><a href="javascript:void(0)" class="sel" onclick="updateDate(this,'0')">午宴</a></span>
+                                <span class="hlsj"><a href="javascript:void(0)" onclick="updateDate(this,'1')">晚宴</a></span>
+                                <span class="hlsj"><a href="javascript:void(0)" onclick="updateDate(this,'2')">全天</a></span>
+                                
+                            </p>
+                            <em class="notice"></em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="15%" align="right" valign="top">酒店地址：</td>
+                        <td width="85%" style="position: relative;">
+                            <p>
+                                
+                                <span class="select02">
+                                    <input id="clickSelect" unable="000313" name="area" type="text" onclick="showCity()" value="双桥区" readonly="">
+                                </span>&nbsp;&nbsp;
+                                
+                            </p>
+                            <div class="layer01" id="selayer01" style="left: 10px; top: 42px; width: 400px; display: none;">
+                                <span class="lTit">请选择城市<a class="close" style="display:inline-block;width:25px;;float:right;background: url('/images/1.png') no-repeat scroll 0px 6px;" href="javascript:void(0);" onclick="$('#selayer01').hide();">&nbsp;</a></span>
+                                <p id="selectArea"></p>
+                                <div class="sCity" id="mytest">
+                                    <h3><span class="cIconsOFF" id="cccity" onclick="changeProvince(this)"></span>省市</h3>
+                                    <div style="display: block" id="allcity">
+                                        
+                                        
+                                        <label>
+                                            <span class="cIconsON" id="test0" onclick="showOrHideCity(this,'0')">重庆市</span>
+                                        </label>
+                                        <div class="cityLayer" id="cityLayer0" style="display: none;" onmouseout="hideMsgBox(event,'cityLayer0')">
+                                            <h5 class="cT" style="top:-1px; left:267px; *top:-75px; *left:-89px; z-index:999;"><span class="cIconsOFF" style="*margin-right: 0px;" onclick="HideCity(this,'0')">重庆市</span></h5>
+                                            <div class="sC" style="top:26px; left:267px; *top:-45px; *left:-89px;">
+                                                
+                                                <label><input type="radio" name="selectcity" unable="双桥区" useid="000313" id="selectcity000313" onclick="clickSelectArea(this,'双桥区','000313',1)">双桥区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="巴南区" useid="000314" id="selectcity000314" onclick="clickSelectArea(this,'巴南区','000314',1)">巴南区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="黔江区" useid="000315" id="selectcity000315" onclick="clickSelectArea(this,'黔江区','000315',1)">黔江区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="江津区" useid="000316" id="selectcity000316" onclick="clickSelectArea(this,'江津区','000316',1)">江津区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="合川区" useid="000317" id="selectcity000317" onclick="clickSelectArea(this,'合川区','000317',1)">合川区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="永川区" useid="000318" id="selectcity000318" onclick="clickSelectArea(this,'永川区','000318',1)">永川区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="南川区" useid="000319" id="selectcity000319" onclick="clickSelectArea(this,'南川区','000319',1)">南川区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="渝中区" useid="0ba2b44c-b6cd-4287-98e0-2790d79f2143" id="selectcity0ba2b44c-b6cd-4287-98e0-2790d79f2143" onclick="clickSelectArea(this,'渝中区','0ba2b44c-b6cd-4287-98e0-2790d79f2143',1)">渝中区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="大渡口区" useid="10957328-c0da-4afc-aecf-4ba95ea35ed7" id="selectcity10957328-c0da-4afc-aecf-4ba95ea35ed7" onclick="clickSelectArea(this,'大渡口区','10957328-c0da-4afc-aecf-4ba95ea35ed7',1)">大渡口区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="沙坪坝区" useid="2099bf51-ee11-46e0-9ad8-f42cf750d424" id="selectcity2099bf51-ee11-46e0-9ad8-f42cf750d424" onclick="clickSelectArea(this,'沙坪坝区','2099bf51-ee11-46e0-9ad8-f42cf750d424',1)">沙坪坝区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="铜梁区" useid="4921a502-c46b-4b0b-9a46-a05c017276f5" id="selectcity4921a502-c46b-4b0b-9a46-a05c017276f5" onclick="clickSelectArea(this,'铜梁区','4921a502-c46b-4b0b-9a46-a05c017276f5',1)">铜梁区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="万州区" useid="82515964-a1e9-4f57-8ba4-3583ad69df3f" id="selectcity82515964-a1e9-4f57-8ba4-3583ad69df3f" onclick="clickSelectArea(this,'万州区','82515964-a1e9-4f57-8ba4-3583ad69df3f',1)">万州区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="九龙坡区" useid="86296978-8706-4187-8a89-5196a2b10918" id="selectcity86296978-8706-4187-8a89-5196a2b10918" onclick="clickSelectArea(this,'九龙坡区','86296978-8706-4187-8a89-5196a2b10918',1)">九龙坡区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="北碚区" useid="aaf39762-d252-4548-a980-5f0ad9f812e3" id="selectcityaaf39762-d252-4548-a980-5f0ad9f812e3" onclick="clickSelectArea(this,'北碚区','aaf39762-d252-4548-a980-5f0ad9f812e3',1)">北碚区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="万盛区" useid="b0f66265-be37-4274-819e-f19535392da4" id="selectcityb0f66265-be37-4274-819e-f19535392da4" onclick="clickSelectArea(this,'万盛区','b0f66265-be37-4274-819e-f19535392da4',1)">万盛区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="永川区市" useid="bdd15d02-ca0c-47b9-a751-a8bf0e9f3b06" id="selectcitybdd15d02-ca0c-47b9-a751-a8bf0e9f3b06" onclick="clickSelectArea(this,'永川区市','bdd15d02-ca0c-47b9-a751-a8bf0e9f3b06',1)">永川区市</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="长寿区" useid="c50eac0d-01b1-4c3c-87fb-beba006825e7" id="selectcityc50eac0d-01b1-4c3c-87fb-beba006825e7" onclick="clickSelectArea(this,'长寿区','c50eac0d-01b1-4c3c-87fb-beba006825e7',1)">长寿区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="江北区" useid="c8d000a6-a4c8-46f3-b45c-8e1575cd2cca" id="selectcityc8d000a6-a4c8-46f3-b45c-8e1575cd2cca" onclick="clickSelectArea(this,'江北区','c8d000a6-a4c8-46f3-b45c-8e1575cd2cca',1)">江北区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="渝北区" useid="db4d665b-0bbe-41bb-9f0d-c96e436543a7" id="selectcitydb4d665b-0bbe-41bb-9f0d-c96e436543a7" onclick="clickSelectArea(this,'渝北区','db4d665b-0bbe-41bb-9f0d-c96e436543a7',1)">渝北区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="合川市" useid="e9394ddf-7728-464b-ab97-3d7368257ac6" id="selectcitye9394ddf-7728-464b-ab97-3d7368257ac6" onclick="clickSelectArea(this,'合川市','e9394ddf-7728-464b-ab97-3d7368257ac6',1)">合川市</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="涪陵区" useid="efa2fc26-00a5-4f3d-a424-c12f94c91df5" id="selectcityefa2fc26-00a5-4f3d-a424-c12f94c91df5" onclick="clickSelectArea(this,'涪陵区','efa2fc26-00a5-4f3d-a424-c12f94c91df5',1)">涪陵区</label>
+                                                
+                                                <label><input type="radio" name="selectcity" unable="南岸区" useid="fd2d1c99-95a9-40c9-a22e-858c3eff1fda" id="selectcityfd2d1c99-95a9-40c9-a22e-858c3eff1fda" onclick="clickSelectArea(this,'南岸区','fd2d1c99-95a9-40c9-a22e-858c3eff1fda',1)">南岸区</label>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <label>
+                                            <span class="cIconsON" id="test1" onclick="showOrHideCity(this,'1')">四川省</span>
+                                        </label>
+                                        <div class="cityLayer" id="cityLayer1" style="display: none;" onmouseout="hideMsgBox(event,'cityLayer1')">
+                                            <h5 class="cT" style="top:-1px; left:267px; *top:-75px; *left:-89px; z-index:999;"><span class="cIconsOFF" style="*margin-right: 0px;" onclick="HideCity(this,'1')">四川省</span></h5>
+                                            <div class="sC" style="top:26px; left:267px; *top:-45px; *left:-89px;">
+                                                
+                                                <label><input type="radio" name="selectcity" unable="成都市" useid="1" id="selectcity1" onclick="clickSelectArea(this,'成都市','1',1)">成都市</label>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="indro" style="display: inline-block;">
+                                
+                                <textarea name="areaDetail" id="textarea11" cols="45" rows="5" onfocus="$(this).attr('placeholder','')" onblur="$(this).attr('placeholder','此处为婚礼人服务地址（摄影摄像化妆可能是家里的地址、化妆师试装请下单后另行沟通）')" placeholder="此处为婚礼人服务地址（摄影摄像化妆可能是家里的地址、化妆师试装请下单后另行沟通）"></textarea>
+                                
+                            </p>
+                            <em class="notice"></em>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td align="right" valign="top" width="15%">其他说明：</td>
+                        <td class="indro">
+                            <textarea name="memo" id="textarea" cols="45" rows="5" onfocus="$(this).attr('placeholder','')" onblur="$(this).attr('placeholder','您可以填写你的要求')" placeholder="您可以填写你的要求"></textarea>
+                            <em class="notice"></em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" width="15%">联系人：</td>
+                        <td width="85%">
+                            <span><input name="appointName" type="text" id="textfield2" value=""></span>
+                            <em class="notice"></em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" width="15%">联系电话：</td>
+                        <td width="85%">
+                            <span><input name="phone" id="textfield3" type="text" value=""></span>
+                            <em class="notice"></em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" width="15%">是否需要纸质合同：</td>
+                        <td><input name="boxPaper" type="checkbox" id="boxPaper" value="1" class="ch" onclick="checkPaper(this)">需要纸质合同
+                        <span class="ht1">
+                            <a target="_blank" href="/html/contract/3.html">合同详情</a>
+                        </span>
+                        <span class="ht2">说明：纸质合同将加收20元邮寄费</span>
+                    </td>
+                </tr>
+                <tr style="display: none;">
+                    <td align="right" width="15%">收件人姓名：</td>
+                    <td>
+                        <span><input type="text" placeholder="合同收件人姓名" size="60" name="conName"></span>
+                        <em class="notice"></em>
+                    </td>
+                </tr>
+                <tr style="display: none;">
+                    <td align="right" width="15%">收件人电话：</td>
+                    <td>
+                        <span><input type="text" placeholder="合同收件人电话" size="60" name="conPhone"></span>
+                        <em class="notice"></em>
+                    </td>
+                </tr>
+                
+            </tbody>
+            </table>
+            <div class="stac">
+                <h2>支付订金：<span id="depositMoney">1000</span> 元</h2><h2 id="paper" style="display: none;">邮寄纸质合同费用：<span id="paperMoney">20</span> 元</h2>
+                <h4><a href="javascript:void(0);" id="sureCommit" onclick="commit();">提交订单</a></h4>
+                <h3>你需要支付费用总计：<span id="totalMoney">1000</span> 元</h3>
+            </div>
+        </div>
+        </form>
+    </div>
+<!-- 尾部-->
+    <%- include('common/footer') %>
+    <%- include('common/script') %>
+  </body>
+</html>

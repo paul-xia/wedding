@@ -1,0 +1,29 @@
+
+    <%- include('common/head', { style: 'passport'}) %>
+    <%- include('common/miniheader') %>
+    <div class="login-content wrap">
+      <h1><a class="logo di"></a><span class="di">欢迎登录</span></h1>
+      <form class="login_form" action="" method="post">
+         <div class="form_wrap">
+           <p class="feld"><label><span class="name">账户：</span><input class="text" type="text" name="" value="" placeholder="手机号/会员名/邮箱"></label></p>
+           <p class="feld tr"><a href="" class="tcc" title="">忘记密码？</a></p>
+           <p class="feld"><label><span class="name">密码：</span><input class="text" type="password" name="" value=""></label></p>
+           <p class="feld tr"><input class="abtn submit" type="submit" value="登录"></p>
+           <p class="feld tr"><a class="tcc">免费注册</a></p>
+         </div>
+         <div class="or_line">
+           <span class="or">or</span>
+           <div class="line"></div>
+         </div>
+
+         <div class="login_by">
+           <a class="by_qq"><i class="di"></i><span class="di">QQ登录</span></a>
+           <a class="by_wb"><i class="di"></i><span class="di">微博登录</span></a>
+         </div>
+      </form>
+    </div>
+    <%- include('common/footer') %>
+    <%- include('common/script') %>
+    <script src="../script/modules/index.js"></script>
+  </body>
+</html>

@@ -25,20 +25,28 @@ body {
         border: 1px solid @site-border-color;
         border-bottom: 0;
         font-size: 14px;
-        color: #545454;
+        color: #545454; position: relative; z-index: 10;
+        dl{ position: absolute; left:229px; top: 0; background-color: #fff; width: 400px; display: none; min-height: 100px;   border: 1px solid #ddd;box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.09);border-left: 0;
+          dd{.cf; padding: 20px;}
+          a{ float: left; .lh(30px); padding: 0 10px; border: 0;
+            &:hover{ border: 0;}
+          }
+        }
         .on {
           color: @site-main-color;
           border-left: 3px solid @site-main-color;
         }
         a {
-          display: inline-block;
-          width: 100%;
+          display: block;
           padding: 25px;
           border-left: 3px solid transparent;
           &:hover {
            .on
           }
         }
+      }
+      li:hover{
+        dl{ display: block;}
       }
     }
   }
@@ -111,7 +119,7 @@ body {
       cursor: pointer;
       position: absolute;
       top: 0;
-      z-index: 10;
+      z-index: 1;
       height: 100%;
       width: 60px;
       &:hover {

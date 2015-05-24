@@ -1,0 +1,75 @@
+
+    <%- include('common/head', { style: 'passport'}) %>
+    <%- include('common/miniheader') %>
+    <div class="login-content wrap">
+      <h1><a class="logo di"></a><span class="di">欢迎注册</span></h1>
+      <div class="regist_box">
+
+        <div class="regist_step step_1" id="stepBox">
+          <span class="step step_a">
+            <i>1</i><span class="di">设置登录名</span>
+          </span>
+          <span class="step step_b">
+            <i>2</i><span class="di">填写账户信息</span>
+          </span>
+          <span class="step step_c">
+            <i>√</i><span class="di">注册成功</span>
+          </span>
+        </div>
+      
+        <div class="form_box">
+          <form action="" class="regist_by_email" id="registByEmail">
+            <input type="hidden" name="telephone" value="">
+            <div class="feld">
+              <label for="email" class="text di">电子邮箱</label>
+              <span class="di"><input type="text" id="email" name="email" class="i_input" placeholder="请输入您的电子邮箱"></span>
+            </div>
+            <!-- <div class="feld">
+              <label for="code" class="text di">验证码</label>
+              <input type="text" class="di i_input code" id="code">
+            </div> -->
+            <div class="feld">
+              <label class="text di"></label>
+              <input type="submit" class="abtn i_submit di" value="下一步">
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <a href="regist_set_login_name_by_phone.html" class="useEmail tcc">通过手机号注册></a>
+            </div>
+          </form>
+
+          <form action="/index.php?app=member&act=register" class="" id="setUserInfo">
+            <input type="hidden" name="telephone" id="telephone">
+            <input type="hidden" name="email" id="email">
+            <div class="feld">
+              <label for="email" class="text di">登录名</label>
+              <span class="di" id="loginText">1520000000</span>
+            </div>
+            <div class="feld">
+              <label for="password" class="text di">登录密码</label>
+              <input type="password" name="password" class="di i_input" id="password">
+            </div>
+            <div class="feld">
+              <label class="text di" for="repassword">确认密码</label>
+              <input type="password" name="password_confirm" class="di i_input" id="repassword">
+              
+            </div>
+            <div class="feld">
+              <label class="text di" for="nickname">会员名</label>
+              <input type="text" name="user_name" class="di i_input" id="nickname" placeholder="一旦设置成功，无法修改">
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <input type="hidden" name="agree" value="1">
+              <input type="submit" class="i_submit abtn" value="下一步">
+              <a href="javascript:;" class="tcc di return">返回修改</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('common/footer') %>
+    <%- include('common/script') %>
+    <script src="../script/modules/regist.js"></script>
+  </body>
+</html>

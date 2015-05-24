@@ -1,0 +1,53 @@
+@import url(lib.less);
+
+.city-typefilter{
+	border: 2px solid @bdc; margin-top: 20px; margin-bottom: 20px;
+	.filter_area{ padding: 15px 15px 0 15px;}
+	.citys{ width: 770px; font-size: 16px;
+		.title{ font-size: 20px;}
+		.city_list{ margin-top: 5px; margin-left: 70px}
+		a{ margin-right: 20px; margin-bottom: 10px; .di;}
+		.on{ color: @tc;}
+	}
+	.search{ background-color: #f4efef; border:1px solid @bdc;
+		input{ background-color: transparent; border: 0 none; float: left;}
+		.submit{ overflow: hidden; text-indent: -999px; font-size: 0; height: 35px; width: 40px; .bgs(-68px -255px)}
+		.text{ .lh(35px); padding: 0 10px; width: 200px;}
+	}
+	.filter_type{ padding: 15px; background-color: @bdc; font-size: 16px;
+		a{ padding: 0 10px; border-right: 2px solid #ccc; .lh(35px)}
+		.on{ color: @tc;}
+	}
+}
+
+.city_ex_list{
+	font-size: 16px;
+	.ex_item{ border-bottom: 1px solid @bdc; margin-bottom: 20px; padding: 20px; }
+	.name{ color: #b05d0b; font-size: 18px;}
+	.info{
+		.icon{ width: 11px; height: 12px; .bgs(-114px -267px); .di;}
+		.time{ margin-left: 20px;}
+	}
+	.img{ padding: 20px 0;}
+}
+
+
+.ex_detail{
+	h1{ font-size: 20px; margin-bottom: 10px;}
+	.ex_box{ border-top: 1px solid @bdc}
+	.ex_item{ background-color: #f4efef; border-bottom: 1px solid @bdc;}
+	.head{ width: 100px; padding: 20px; position: relative;
+		.tag{ position: absolute; right: 20px; top: 20px; width: 50px; height: 51px; .bgs(-51px -174px)}
+	}
+	.entry_box{ background-color: #fff; margin-left: 140px; padding: 20px; min-height: 150px;
+		p{ margin-bottom: 10px;}
+		img{ max-width: 100%; margin: 0 10px 10px 0;}
+	}
+}
+
+.ex_commit_form{ margin-bottom: 20px;
+	h2{ margin-bottom: 20px;}
+	.tx_wp{ padding: 20px; border: 1px solid @bdc; margin-bottom: 20px;}
+	textarea{ width: 100%; border: 0; resize:none;}
+	.submit{ background-color: @tc; border: 0 none;}
+}

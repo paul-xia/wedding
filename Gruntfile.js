@@ -18,6 +18,7 @@ module.exports = function(grunt) {
             options: {
                 cleancss: true,
                 Choices: 'gzip',
+                
                 ieCompat: true,
                 banner: '/*\n@ project:<%=pkg.name%>\n@ date:<%=grunt.template.today("yyyy-mm-dd")%>\n*/'
             },
@@ -29,6 +30,7 @@ module.exports = function(grunt) {
                     'dest/style/css/hr.css': 'style/less/hr.less',
                     'dest/style/css/wedding_dress.css': 'style/less/wedding_dress.less',
                     'dest/style/css/passport.css': 'style/less/passport.less',
+                    'dest/style/css/other.css': 'style/less/other.less'
                 }
             },
             watch: {

@@ -296,7 +296,7 @@ body {background-color: #ffffff;}
 
 
 .sess-info{ font-size: 16px;
-  .hotel_intro{ 
+  .hotel_intro{ margin-bottom: 20px;
     .base_info{background-color: #fefbf0; border: 1px solid @bdc; padding: 30px 30px 10px; margin-bottom: 20px; .cf;
       span{ float: left; width: 340px; margin-bottom: 20px;}
     }
@@ -306,6 +306,51 @@ body {background-color: #ffffff;}
     }
     .close{
       i{.bgs(-77px -314px);}
+    }
+  }
+
+  .banquet_hall{ margin-bottom: 20px;}
+  .banquet_list{ padding-left: 25px; padding-top: 10px; margin-right: -50px;}
+  .banquet_item{ float: left; width: 500px; margin-right: 50px;
+    .caption{ background-color: #f7f7f7; padding: 20px;
+      .cap_item{ width: 460px / 3; .lh(30px)}
+    }
+    .name{ margin-bottom: 5px;
+      span{ font-size: 18px;}
+      a{ font-size: 12px; color: #01b5ae; border: 1px solid #01b5ae; border-radius: 2px; padding: 0 8px; .lh(22px)}
+    }
+  }
+  
+
+
+  .party_menu{
+    h2{border: 0; margin-bottom: 0;}
+    .title_grp{ border-bottom: 1px solid @bdc;}
+    .menu_control{ margin-top: 20px; margin-right: 20px;
+      .conbtn{ margin: 0 10px; position: relative; top: -5px;
+        a{.bgs(-95px -305px); width: 25px; height: 25px; float: left; border: 1px solid @bdc; margin-right: -1px;}
+        .right{ .bgs(-114px -305px)}
+        .disabled{ .op(50)}
+      }
+    }
+
+    .menu_List{ overflow: hidden;
+      ul{ width: 2000px; margin-top: 45px;}
+      li{ float: left; width: 242px;  margin-right: 44px; position: relative;
+        .party_type{ color: #fff; font-size: 16px; text-align: center; background-color: #01b5ae; width: 150px; .lh(28px); border-radius: 28px; position: absolute; top: -14px; left: 36px;}
+        .price{ background-color: #dafbf1; text-align: center; padding: 30px 0 15px 0; font-size: 16px; border-radius: 16px 16px 0 0;}
+        .big{ font-size: 30px;}
+        .des{background-color: #fcfcfc; padding: 20px 18px; font-size: 14px;}
+        .tc{ text-align: center;}
+        .tr{ text-align: right; margin-top: 10px;}
+        .mes{ color: #888888;}
+        .inst{ height: 60px; margin-top: 10px;}
+      }
+      .type_1{}
+      .type_2{
+        .party_type{ background-color: #f4b800}
+        .price{ background-color: #fbf6e4}
+      }
     }
   }
 }

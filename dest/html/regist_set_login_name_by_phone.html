@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！-->
+    <!--[if lt IE 9]>
+      <script src="../../public/bower/html5shiv/dist/html5shiv.min.js">
+      </script>
+    <![endif]-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 苹果允许全屏模式-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 苹果浏览器顶部状态栏颜色-->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 忽略数字为电话号码-->
+    <link rel="apple-touch-icon-precomposed" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <title>风暴婚庆-官方网站</title>
+    <link rel="stylesheet" href="../style/css/common.css" />
+    <link rel="stylesheet" href="../style/css/passport.css" />
+  </head>
+  <!-- 头部-->
+  <body>
+    <div class="site-header-in">
+  <div class="wrap">
+    <span>
+      欢迎访问 喜庆风暴商城
+    </span>
+    <div class="login">
+      <a href="login.html" class="btn">
+        登录
+      </a>
+      <a href="javascript:;" class="line">
+        |
+      </a>
+      <a href="regist_set_login_name_by_email.html" class="btn">
+        注册
+      </a>
+    </div>
+  </div>
+</div>
+    <div class="login-content wrap">
+      <h1><a class="logo di"></a><span class="di">欢迎注册</span></h1>
+      <div class="regist_box">
+
+        <div class="regist_step step_1">
+          <span class="step step_a">
+            <i>1</i><span class="di">设置登录名</span>
+          </span>
+          <span class="step step_b">
+            <i>2</i><span class="di">填写账户信息</span>
+          </span>
+          <span class="step step_c">
+            <i>√</i><span class="di">注册成功</span>
+          </span>
+        </div>
+
+        <div class="form_box">
+          <form action="" class="regist_by_phone" id="registByPhone">
+          <input type="hidden" value="" name="email">
+            <div class="feld">
+              <label for="numberArea" class="text di">所在国家/地区</label>
+              <select name="" id="numberArea" class="di">
+                <option value="">中国大陆</option>
+              </select>
+            </div>
+            <div class="feld">
+              <label for="phoneNumber" class="text di">手机号码</label>
+              <span class="di nmberBox"><i>+86</i><input type="text" name="telephone" id="phoneNumber" class="i_input" placeholder="请输入您的手机号码"></span>
+              <!-- <span class="valid_msg">
+                <i>√</i>
+                <span class="di">验证通过</span>
+              </span> -->
+            </div>
+            <div class="feld">
+              <label for="code" class="text di">验证码</label>
+              <input type="text" class="di i_input code" id="code">
+              <a href="javascript:;" class="abtn send_code_btn" id="sendValidCode">发送验证码</a>
+              <!-- <span class="valid_msg valid_error">
+                <i>X</i>
+                <span class="di">验证不通过</span>
+              </span> -->
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <input type="submit" class="abtn i_submit di" value="下一步">
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <a href="regist_set_login_name_by_email.html" class="useEmail tcc">通过邮箱注册></a>
+            </div>
+          </form>
+
+          <form action="/index.php?app=member&act=register" class="" id="setUserInfo">
+            <input type="hidden" name="telephone" id="telephone">
+            <input type="hidden" name="email" id="email">
+            <div class="feld">
+              <label for="email" class="text di">登录名</label>
+              <span class="di" id="loginText">1520000000</span>
+            </div>
+            <div class="feld">
+              <label for="password" class="text di">登录密码</label>
+              <input type="password" name="password" class="di i_input" id="password">
+            </div>
+            <div class="feld">
+              <label class="text di" for="repassword">确认密码</label>
+              <input type="password" name="password_confirm" class="di i_input" id="repassword">
+              
+            </div>
+            <div class="feld">
+              <label class="text di" for="nickname">会员名</label>
+              <input type="text" name="user_name" class="di i_input" id="nickname" placeholder="一旦设置成功，无法修改">
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <input type="hidden" name="agree" value="1">
+              <input type="submit" class="i_submit abtn" value="下一步">
+              <a href="javascript:;" class="tcc di return">返回修改</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="send_phone_pop">
+      <a href="" class="closeBtn close">X</a>
+      <h3>验证手机</h3>
+      <div class="note"><i class="di">i</i><span class="di">校验码已发送到你的手机，15分钟内输入有效，请勿泄露</span></div>
+      <form action="">
+        <div class="feld">
+          <span class="name">手机号码</span>
+          <span class="text">15200000000</span>
+        </div>
+        <div class="feld">
+          <span class="name">效验码</span>
+          <span class="text"><input type="text" class="code"></span>
+          <a href="" class="send_btn disabled">46秒后可重新操作</a>
+        </div>
+        <div class="feld">
+          <span class="name"></span>
+          <i class="right">√</i>
+          <span class="s-note">效验码已发送至你的手机，请查收</span>
+        </div>
+        <div class="feld">
+          <span class="name"></span>
+          <input type="submit" class="submt abtn" value="确定">
+          <a href="javascript:;" class="di close">返回修改手机号码</a>
+        </div>
+      </form>
+    </div> -->
+    <!-- 尾部-->
+<footer class="site-footer">
+  <div class="site-footer-in">
+    <div class="box">
+      <div class="title">
+        购物指南
+      </div>
+      <div>
+        <a href="">
+          购物流程
+        </a>
+      </div>
+      <div>
+        <a href="">
+          会员介绍
+        </a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">
+        配送方式
+      </div>
+      <div>
+        <a href="">
+          上门自取
+        </a>
+      </div>
+      <div>
+        <a href="">
+          211限时达
+        </a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">
+        购物指南
+      </div>
+      <div>
+        <a href="">
+          购物流程
+        </a>
+      </div>
+      <div>
+        <a href="">
+          会员介绍
+        </a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">
+        支付方式
+      </div>
+      <div>
+        <a href="">
+          货到付款
+        </a>
+      </div>
+      <div>
+        <a href="">
+          在线支付
+        </a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">
+        售后服务
+      </div>
+      <div>
+        <a href="">
+          售后政策
+        </a>
+      </div>
+      <div>
+        <a href="">
+          取消订单
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <a href="">
+      关于我们
+    </a>
+    <a href="">
+      联系我们
+    </a>
+    <a href="">
+      加入我们
+    </a>
+    <a href="">
+      帮助中心
+    </a>
+    <a href="">
+      新手引导
+    </a>
+    <a href="">
+      友情链接
+    </a>
+  </div>
+</footer>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/md5.js"></script>
+    <script src="../script/modules/regist.js"></script>
+  </body>
+</html>

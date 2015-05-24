@@ -1,0 +1,32 @@
+@import url(lib.less);
+
+.city-typefilter{
+	border: 2px solid @bdc; margin-top: 20px; margin-bottom: 20px;
+	.filter_area{ padding: 15px 15px 0 15px;}
+	.citys{ width: 770px; font-size: 16px;
+		.title{ font-size: 20px;}
+		.city_list{ margin-top: 5px; margin-left: 70px}
+		a{ margin-right: 20px; margin-bottom: 10px; .di;}
+		.on{ color: @tc;}
+	}
+	.search{ background-color: #f4efef; border:1px solid @bdc;
+		input{ background-color: transparent; border: 0 none; float: left;}
+		.submit{ overflow: hidden; text-indent: -999px; font-size: 0; height: 35px; width: 40px; .bgs(-68px -255px)}
+		.text{ .lh(35px); padding: 0 10px; width: 200px;}
+	}
+	.filter_type{ padding: 15px; background-color: @bdc; font-size: 16px;
+		a{ padding: 0 10px; border-right: 2px solid #ccc; .lh(35px)}
+		.on{ color: @tc;}
+	}
+}
+
+.city_ex_list{
+	font-size: 16px;
+	.ex_item{ border-bottom: 1px solid @bdc; margin-bottom: 20px; padding: 20px; }
+	.name{ color: #b05d0b; font-size: 18px;}
+	.info{
+		.icon{ width: 11px; height: 12px; .bgs(-114px -267px); .di;}
+		.time{ margin-left: 20px;}
+	}
+	.img{ padding: 20px 0;}
+}

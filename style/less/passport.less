@@ -1,0 +1,105 @@
+@import url(lib.less);
+.login-content{
+	h1{ font-size: 28px; padding: 20px 0;
+		.logo{width: 81px; height: 91px; .bi("logo.png"); margin-right: 20px;}
+	}
+	.login_form{
+		.bg("login_bg.jpg", no-repeat, center top);text-align: center; padding: 50px 80px 120px 668px; margin-bottom: 70px;
+		.tr{ text-align: right;}
+		.text{.di; width: 288px; padding: 0 10px; .lh(50px)}
+		.feld{ margin-bottom: 10px;}
+		.name{.di;}
+		.submit{ width: 310px; border:0 none; background-color: @tc; margin-top: 20px;}
+	}
+	.or_line{ position: relative;
+		.or{ font-size: 16px; .lh(20px); position: relative;z-index: 1;.di; background-color: #FBF9FA; padding: 0 5px;}
+		.line{ position: absolute; background-color: @bdc; height: 1px; width: 100%;left: 0;top: 11px;}
+	}
+	.login_by{
+		padding-left: 43px; font-size: 18px; margin-top: 20px;
+		i{ width: 34px; height: 33px; margin-right: 10px;}
+		.by_qq{ margin-right: 70px;
+			i{ .bgs(0 -254px)}
+		}
+		.by_wb{
+			i{ .bgs(-34px -254px)}
+		}
+	}
+}
+
+.regist_box{
+	.regist_step{.cf; border-bottom: 1px solid @bdc; padding-left: 180px; margin-bottom: 80px;
+		.step{ float: left; border-bottom: 1px solid transparent; margin-right: 65px; padding:0 35px 10px 35px; font-size: 18px; margin-bottom: -1px;}
+		i{.di; background-color: #c4c3c3; width: 23px; .lh(23px); border-radius: 23px; color: #fff; text-align: center; margin-right: 5px;}
+	}
+	.step_1{
+		.step_a{ color:@tc; border-bottom: 1px solid @tc;
+			i{ background-color: @tc;}
+		}
+	}
+	.step_2{
+		.step_b{ color:@tc; border-bottom: 1px solid @tc;
+			i{ background-color: @tc;}
+		}
+	}
+	.step_3{
+		.step_c{ color:@tc; border-bottom: 1px solid @tc;
+			i{ background-color: @tc;}
+		}
+	}
+
+	.form_box{ font-size: 16px; margin-bottom: 50px;
+		label.text{ text-align: right; width: 400px; padding-right: 20px;}
+		div.feld{ margin-bottom: 20px;}
+		select{ .lh(28px)}
+		.nmberBox{ border: 1px solid #ccc; font-size: 0;
+			i{ background-color: #ededed; font-size: 16px;.di; .lh(38px); padding: 0 10px;}
+			input{ border: 0 none; font-size: 16px; .di;}
+		}
+		.i_input{ .lh(38px); padding: 0 10px; width: 250px;}
+		.i_submit{background-color: @tc; border: 0 none;}
+		.code{ width: 80px;}
+	}
+
+	.info_box{
+		width: 400px; margin: 0 auto 50px;
+		h2{
+			i{ color: #fff; background-color: #15c2b4; width: 46px; .lh(46px); text-align: center; border-radius: 46px; font-size: 20px; margin-right: 10px;}
+		}
+		p{ font-size: 18px;   padding-left: 56px; line-height: 45px;}
+	}
+
+	.valid_msg{
+		.di; margin-left: 10px;
+		i{.di; width: 16px; height: 16px; font-size: 12px; border-radius: 16px; text-align: center; .lh(16px); color: #fff; background-color: #15c2b4;}
+	}
+	.valid_error{
+		i{ background-color: red;}
+	}
+
+	.send_code_btn{
+		.lh(40px); background-color: @tc; width: 100px; font-size: 14px; margin-left: 20px; width: auto; padding: 0 15px;
+	}
+}
+
+.send_phone_pop{
+	position: absolute; display: none;border: 1px solid @bdc; border-top: 1px solid @tc; top: 254px; left: 50%; background-color: #fff; width: 670px; margin-left: -361px; padding: 25px;
+	.closeBtn{ position: absolute; right: 10px; top: 10px; font-family: arial; color: @tc; font-size: 18px;}
+	h3{ font-size: 16px; font-weight: bold; margin-bottom: 20px;}
+	.note{ margin-bottom: 20px;
+		i{ width: 15px; height: 15px; line-height: 15px; color: #fff; border-radius: 15px; background-color: #00bfff; text-align: center; font-size: 12px; margin-right: 10px;}
+	}
+	.feld{ margin-bottom: 20px;}
+	form{ font-size: 16px;}
+	.name{ width: 200px; text-align: right; .di; padding-right: 20px;}
+	.code{ .lh(38px); padding-left: 10px; width: 80px; margin-right: 10px;}
+	.text{.di;}
+	.send_btn{
+		.lh(40px); background-color: @tc; color: #fff;.di; border-radius: 4px; padding: 0 10px;
+	}
+	.disabled{ background-color: @bdc; color: #b5b5b5;}
+	i.right{width: 15px; height: 15px; line-height: 15px; color: #fff; border-radius: 15px; background-color: #00bfff; text-align: center; font-size: 12px; margin-right: 10px; .di;}
+	.s-note{ font-size: 12px;}
+	.submt{ background-color: @tc; width: 110px; .lh(40px); border:0 none;}
+	.close{ color: @tc; margin-left: 10px; font-size: 14px;}
+}

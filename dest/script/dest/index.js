@@ -1,6 +1,6 @@
 /*
 @ project:wedding
-@ date:2015-05-21
+@ date:2015-05-24
 @ author:Paul Xia
 */
 (function(){var a,b,c,d,e,f,g,h,i,j,k,l,m,n,o;i=$("#pics img"),k=$("#picsNav li"),j=0,n=null,a=function(){return i.fadeOut(500).eq(j).fadeIn(500),k.removeClass("on").eq(j).addClass("on"),j>2&&(j=-1),j++,n=setTimeout(a,4e3)},a(),k.on("click",function(){var b;return clearTimeout(n),b=$(this).index(),j=b,a()}),f=$("#nav-banner-bottom-prev"),e=$("#nav-banner-bottom-next"),b=$("#banner-bottom-content"),d=0,c=b.find(".box").length,f.click(function(){return 0!==d?(d--,b.animate({left:-290*d},300)):void 0}),e.click(function(){return d!==c-3?(d++,b.animate({left:-290*d},300)):void 0}),g=$("#nav-bottom-scroll"),h=g.height(),l=null,g.children().clone().appendTo(g),m=function(){var a;return a=parseInt(g.css("top"))-1,-h>a&&(a=0),g.css("top",a+"px"),l=setTimeout(m,66)},m(),g.mouseenter(function(){return clearTimeout(l)}),g.mouseleave(function(){return m()}),o=$(".container-bottom-in .menu"),o.click(function(){var a,b;return b=$(this).parent().find(".menu"),a=b.index($(this)),b.removeClass("on").eq(a).addClass("on"),$(this).parent().siblings(".box").fadeOut(0).eq(a).fadeIn(0)})}).call(this);

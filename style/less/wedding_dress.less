@@ -1,0 +1,90 @@
+@import url(lib.less);
+.container-dress{
+	width: @site-width; margin: 20px auto;
+	.filter_bar{ padding: 20px 0; border: 1px solid @bdc; margin-bottom: 20px; padding-left: 20px;
+		.on{color: @tc;}
+		a{ margin-right: 20px;}
+	}
+	.wedding_list{
+		li{ margin-bottom: 38px; padding-bottom: 38px; border-bottom: 1px solid @bdc; position: relative;}
+		.link{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
+		.img{ padding: 20px; border: 1px solid @bdc; background-color: #fcfcfc; margin-right: 30px;
+			img{ width: 200px; height: 200px;}
+		}
+		h2{ margin-bottom: 50px; font-size: 30px;}
+		.info{ width: 300px;
+			.show_map{
+				.icon{ width: 12px; height: 17px; .bgs(-86px -93px); margin-right:5px;}
+			}
+			.star_bar{ margin-right: 20px;}
+			p{ margin-bottom: 17px;}
+			.times{ font-size: 22px;}
+		}
+
+		.activity{
+			width: 272px; overflow: hidden; text-align: center;
+			.imgbox{.cf; margin-right: -10px; font-size: 0;}
+			img{ float: left; margin-right: 10px; margin-bottom: 10px;}
+			.figer{ font-size: 18px;}
+			.kh{ font-size: 20px;}
+		}
+	}
+}
+
+
+.price_box{
+  border:1px solid @bdc;
+  h2{ border-bottom: 1px solid @bdc; font-size: 18px; .lh(40px); padding-left: 10px;}
+  table{ width: 96%; margin-top: 20px; margin-left: 2%; border:1px solid @bdc; font-size: 16px;}
+  td{ border: 1px solid @bdc; padding: 10px;}
+  .type_name{ background-color: #f4f4f4; word-wrap: normal; white-space: nowrap; font-size: 18px;}
+  .type_wp{.omit; font-size: 18px;}
+  .yybtn{ text-align: center; padding: 20px 0;
+    a{.di; color: #fff; background-color: #e91d4a; width: 120px; .lh(40px); border-radius: 2px;}
+  }
+}
+
+.sess-info .hot_activity{position:relative;border-bottom:2px solid #e6e6e6;padding-bottom:20px}
+.sess-info .hot_activity .show_more{position:absolute;top:20px;right:10px;font-size:16px}
+.sess-info .hot_activity .activity_head i{width:16px;height:16px;background:transparent url(images/site_icon.png?1421651581223) no-repeat -83px -134px;margin-right:20px}
+.sess-info .hot_activity .activity_head p{line-height:70px}
+.sess-info .hot_activity .activity_d img{margin:0 20px}
+
+.sess-info .store_album{position:relative;border-bottom:2px solid #e6e6e6;padding-bottom:20px}
+.sess-info .store_album .show_more{position:absolute;top:20px;right:10px;font-size:16px}
+.sess-info .store_album .work_list{overflow:hidden}
+.sess-info .store_album .work_list ul{min-height:1px;zoom:1;padding-left:10px;margin-right:-75px}
+.sess-info .store_album .work_list ul:after{content:"020";display:block;height:0;clear:both;visibility:hidden}
+.sess-info .store_album .work_list ul .fl{float:left}
+.sess-info .store_album .work_list ul .fr{float:right}
+.sess-info .store_album .work_list li{float:left;margin-right:75px;margin-bottom:20px;width:310px}
+.sess-info .store_album .work_list li a{display:block}
+.sess-info .store_album .work_list li img{width:274px;height:274px}
+.sess-info .store_album .work_list li .omit{font-size:18px}
+.sess-info .store_album .work_list li .imgbox{font-size:0;padding:18px;box-shadow:0 2px 2px rgba(0,0,0,.08);background-color:#fcfcfc;margin-bottom:5px}
+.sess-info .store_album .show_movie{overflow:hidden}
+.sess-info .store_album .show_movie ul{min-height:1px;zoom:1;padding-left:10px;margin-right:-44px}
+.sess-info .store_album .show_movie ul:after{content:"020";display:block;height:0;clear:both;visibility:hidden}
+.sess-info .store_album .show_movie ul .fl{float:left}
+.sess-info .store_album .show_movie ul .fr{float:right}
+.sess-info .store_album .show_movie li{position:relative;float:left;width:330px;margin-right:44px}
+.sess-info .store_album .show_movie .mask{position:absolute;left:0;bottom:0;width:100%;height:40px;z-index:1;background-color:#000;opacity:.4;filter:alpha(opacity=40)}
+.sess-info .store_album .show_movie .name{position:absolute;left:0;bottom:0;text-align:center;z-index:2;width:100%;line-height:40px;height:40px;color:#fff;font-size:18px}
+.sess-info .store_album .service_price{overflow:hidden}
+.sess-info .store_album .service_price ul{min-height:1px;zoom:1;padding-left:10px;margin-right:-73px}
+.sess-info .store_album .service_price ul:after{content:"020";display:block;height:0;clear:both;visibility:hidden}
+.sess-info .store_album .service_price ul .fl{float:left}
+.sess-info .store_album .service_price ul .fr{float:right}
+.sess-info .store_album .service_price li{float:left;width:310px;margin-right:73px;text-align:center;margin-bottom:20px}
+.sess-info .store_album .service_price li a{font-size:0;display:block;margin-bottom:5px}
+.sess-info .store_album .service_price .tcc{font-size:20px}
+.sess-info .store_album .service_price del{font-size:16px}
+.sess-info .store_album .anli_list .img_list{font-size:0;margin-top:10px}
+.sess-info .store_album .anli_list .link{min-height:1px;zoom:1;padding:0 20px}
+.sess-info .store_album .anli_list .link:after{content:"020";display:block;height:0;clear:both;visibility:hidden}
+.sess-info .store_album .anli_list .link .fl{float:left}
+.sess-info .store_album .anli_list .link .fr{float:right}
+.sess-info .store_album .anli_list .link i{float:left;width:6px;height:10px;background:transparent url(images/site_icon.png?1421651581223) no-repeat -105px -97px;margin-top:5px;margin-right:10px}
+.sess-info .store_album .anli_list .link a{float:left;width:900px;white-space:nowrap;overflow:hidden;word-wrap:normal;-o-text-overflow:ellipsis;text-overflow:ellipsis}
+.sess-info .store_album .anli_list .link span{float:right;color:#a0a0a0}
+.sess-info .store_album .anli_list img{margin:0 20px 20px 0}

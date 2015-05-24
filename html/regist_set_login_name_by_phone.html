@@ -1,0 +1,117 @@
+
+    <%- include('common/head', { style: 'passport'}) %>
+    <%- include('common/miniheader') %>
+    <div class="login-content wrap">
+      <h1><a class="logo di"></a><span class="di">欢迎注册</span></h1>
+      <div class="regist_box">
+
+        <div class="regist_step step_1">
+          <span class="step step_a">
+            <i>1</i><span class="di">设置登录名</span>
+          </span>
+          <span class="step step_b">
+            <i>2</i><span class="di">填写账户信息</span>
+          </span>
+          <span class="step step_c">
+            <i>√</i><span class="di">注册成功</span>
+          </span>
+        </div>
+
+        <div class="form_box">
+          <form action="" class="regist_by_phone" id="registByPhone">
+          <input type="hidden" value="" name="email">
+            <div class="feld">
+              <label for="numberArea" class="text di">所在国家/地区</label>
+              <select name="" id="numberArea" class="di">
+                <option value="">中国大陆</option>
+              </select>
+            </div>
+            <div class="feld">
+              <label for="phoneNumber" class="text di">手机号码</label>
+              <span class="di nmberBox"><i>+86</i><input type="text" name="telephone" id="phoneNumber" class="i_input" placeholder="请输入您的手机号码"></span>
+              <!-- <span class="valid_msg">
+                <i>√</i>
+                <span class="di">验证通过</span>
+              </span> -->
+            </div>
+            <div class="feld">
+              <label for="code" class="text di">验证码</label>
+              <input type="text" class="di i_input code" id="code">
+              <a href="javascript:;" class="abtn send_code_btn" id="sendValidCode">发送验证码</a>
+              <!-- <span class="valid_msg valid_error">
+                <i>X</i>
+                <span class="di">验证不通过</span>
+              </span> -->
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <input type="submit" class="abtn i_submit di" value="下一步">
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <a href="regist_set_login_name_by_email.html" class="useEmail tcc">通过邮箱注册></a>
+            </div>
+          </form>
+
+          <form action="/index.php?app=member&act=register" class="" id="setUserInfo">
+            <input type="hidden" name="telephone" id="telephone">
+            <input type="hidden" name="email" id="email">
+            <div class="feld">
+              <label for="email" class="text di">登录名</label>
+              <span class="di" id="loginText">1520000000</span>
+            </div>
+            <div class="feld">
+              <label for="password" class="text di">登录密码</label>
+              <input type="password" name="password" class="di i_input" id="password">
+            </div>
+            <div class="feld">
+              <label class="text di" for="repassword">确认密码</label>
+              <input type="password" name="password_confirm" class="di i_input" id="repassword">
+              
+            </div>
+            <div class="feld">
+              <label class="text di" for="nickname">会员名</label>
+              <input type="text" name="user_name" class="di i_input" id="nickname" placeholder="一旦设置成功，无法修改">
+            </div>
+            <div class="feld">
+              <label class="text di"></label>
+              <input type="hidden" name="agree" value="1">
+              <input type="submit" class="i_submit abtn" value="下一步">
+              <a href="javascript:;" class="tcc di return">返回修改</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="send_phone_pop">
+      <a href="" class="closeBtn close">X</a>
+      <h3>验证手机</h3>
+      <div class="note"><i class="di">i</i><span class="di">校验码已发送到你的手机，15分钟内输入有效，请勿泄露</span></div>
+      <form action="">
+        <div class="feld">
+          <span class="name">手机号码</span>
+          <span class="text">15200000000</span>
+        </div>
+        <div class="feld">
+          <span class="name">效验码</span>
+          <span class="text"><input type="text" class="code"></span>
+          <a href="" class="send_btn disabled">46秒后可重新操作</a>
+        </div>
+        <div class="feld">
+          <span class="name"></span>
+          <i class="right">√</i>
+          <span class="s-note">效验码已发送至你的手机，请查收</span>
+        </div>
+        <div class="feld">
+          <span class="name"></span>
+          <input type="submit" class="submt abtn" value="确定">
+          <a href="javascript:;" class="di close">返回修改手机号码</a>
+        </div>
+      </form>
+    </div> -->
+    <%- include('common/footer') %>
+    <%- include('common/script') %>
+    <script src="../script/md5.js"></script>
+    <script src="../script/modules/regist.js"></script>
+  </body>
+</html>
